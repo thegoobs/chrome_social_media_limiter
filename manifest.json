@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "Social Media Timer",
+  "description": "Find yourself using social media a little too much when trying to be productive? Set a timer and get stuff done.",
+  "version": "1.0",
+
+  "browser_action": {
+   "default_icon": "icon.png",
+   "default_popup": "popup.html"
+  },
+  "permissions": [
+   "activeTab"
+   ],
+	"web_accessible_resources": [ "*.png", "*.ttf" ]
+}

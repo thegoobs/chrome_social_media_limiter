@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Social Media Timer by Guthrie Schoolar</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="popup.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	</head>
+	<body>
+		<!--title-->
+		<h1>Social Media Timer</h1>
+		<div class="line"></div>
+		
+		<h2>Get Productive</h2>
+		<!--timer-->
+		<div id="timer" align="center">
+			<div id="hours" class="timer_group">
+				<span id="hour_num">00</span>
+				<div class="controls">
+					<span id="hours_up" class="up">+</span>
+					<span id="hours_down" class="down">-</span>
+				</div>
+			</div>
+			<span id="colon">:</span>
+			<div id="minutes" class="timer_group">
+				<span id="min_num">00</span>
+				<div class="controls">
+					<span id="min_up" class="up">+</span>
+					<span id="min_down" class="down">-</span>
+				</div>
+			</div>
+			<span id="colon">:</span>
+			<div id="seconds" class="timer_group">
+				<span id="sec_num">00</span>
+				<div class="controls">
+					<span id="sec_up" class="up">+</span>
+					<span id="sec_down" class="down">-</span>
+				</div>
+			</div>
+			<br>
+		</div>
+		<br style="clear: left;">
+		<!--button-->
+		<button id="begin">Begin Timer</button>
+		
+		<!--JavaScript-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="//cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
+		<script src="popup.js"></script>
+		<script src="button_control.js"></script>
+		<script src="https://use.fontawesome.com/f2b29d30d8.js"></script>
+	</body>
+</html>
