@@ -2,7 +2,7 @@ body {
 	width: 220px;
 	background-color: whitesmoke;
 	text-align: center;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', serif;
 	color: #011627;
 	transition: all 0.25s;
 }
@@ -52,21 +52,53 @@ h2 {
 	color: #982649;
 }
 
+span {
+    -webkit-user-select: none; /*no double click highlight*/
+}
+
+.buttons {
+	margin: 0 auto;
+	display: table;
+}
+
 #begin {
-	background-color: #011627;
+	background-color: #5DA9E9;
 	color: whitesmoke;
-	width: 100%;
-	border: 0px;
-	padding: 20px;
-	font-size: 1.25em;
+	display: table;
+	margin: 0 auto;
+	float: left;
+	margin-left: 2px;
+	border: 2px solid #5DA9E9;
+	padding: 10px;
+	font-size: 1em;
 	letter-spacing: 1px;
+	overflow: hidden;
 }
 
 #begin:hover {
-	background-color: #5DA9E9;
+	background-color: whitesmoke;
 	transition: 0.25s;
-	color: whitesmoke;
+	color: #5DA9E9;
 }
+
+#clear {
+	background-color: #982649;
+	color: whitesmoke;
+	display: table;
+	margin: 0 auto;
+	float: left;
+	margin-right: 2px;
+	border: 2px solid #982649;
+	padding: 10px;
+	font-size: 1em;
+	letter-spacing: 1px;	
+	overflow: hidden;
+}
+
+#clear:hover {
+	background-color: whitesmoke;
+	transition: 0.25s;
+	color: #982649;
 
 /*COLOR SCHEME
 red: #982649
