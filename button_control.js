@@ -41,8 +41,9 @@ $("#sec_down").hover(function () {
 
 
 /*manipulate time on popup*/
-var num = $("#hour_num").text();
+var num = 0;
 $("#hours_up").click(function () {
+	num = $("#hour_num").text();
 	num = Number(num);
 	num = num + 1;
 	$("#hour_num").text(num >= 10 ? String(num) : '0' + String(num));
