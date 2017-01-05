@@ -7,15 +7,28 @@ var mode = 0;
 var interval = 0;
 
 function animations() {
-	$(".controls").animate({
-		height: 'toggle'
-	}, 500);
-	$("#begin").animate({
-		height: 'toggle'
-	});
-	$("#clear").animate({
-		height: 'toggle'
-	});
+	if (mode === 0) {
+		$(".controls").animate({
+			height: 'toggle'
+		}, 500);
+		$("#begin").animate({
+			right: '-200px'
+		}, 500);
+		$("#clear").animate({
+			left: '-200px'
+		}, 500);
+	} else {
+		$(".controls").animate({
+			height: 'toggle'
+		}, 500);
+		$("#begin").animate({
+			right: '0px'
+		}, 500);
+		$("#clear").animate({
+			left: '0px'
+		}, 500);
+		
+	}
 }
 
 function getTime() {
@@ -35,10 +48,10 @@ function timer() {
 		$("#min_num").text(('0' + String(Math.floor(t / 60))).slice(-2));
 		$("#sec_num").text(('0' + String(Math.floor(t % 60))).slice(-2));
 	} else {
-		mode = 0;
 		clearInterval(interval);
 		interval = 0;
 		animations();
+		mode = 0;
 	}
 }
 
